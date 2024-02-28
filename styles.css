@@ -22,3 +22,7 @@ a:link, a:visited{
 .line {
     border-bottom: 1px solid #888;
   }
+
+  li{
+    padding-bottom: 10px;
+  }
