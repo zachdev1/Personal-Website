@@ -1,0 +1,83 @@
+img {
+    width: 54px;
+    height: 54px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.folder-icon {
+    width: 100px;
+    height: 86px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.my_computer-icon {
+    width: 100px;
+    height: 86px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.notepad-icon {
+    width: 100px;
+    height: 86px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.linkedin-logo {
+    width: 100px;
+    height: 86px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.github-logo {
+    width: 100px;
+    height: 86px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.recycle_bin-icon {
+    width: 100px;
+    height: 86px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.icon-name {
+    
+}
+
+.icon-name p{
+    color: white;
+    font-size: 13px;
+    margin: 0;
+}
