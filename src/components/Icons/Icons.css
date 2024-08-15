@@ -94,6 +94,21 @@ button:hover {
     height: 54px;
 }
 
+.cmd-icon {
+    width: 100px;
+    height: 86px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cmd-icon img {
+    width: 54px;
+    height: 54px;
+}
+
 .recycle_bin-icon {
     width: 100px;
     height: 86px;
@@ -112,9 +127,9 @@ button:hover {
     height: 54px;
 }
 
-.icon-name {
+/* .icon-name {
     
-}
+} */
 
 .icon-name p{
     color: white;
@@ -127,7 +142,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 20%;
+    bottom: 50%;
     width: 500px;
     left: 30%;
     position: fixed;
@@ -135,4 +150,31 @@ button:hover {
 
 .about_me-container p {
     font-size: 13px;
+}
+
+.cmd-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 30%;
+    width: 500px;
+    left: 30%;
+    position: fixed;
+}
+
+.cmd-container pre {
+    font-size: 13px;
+    text-align: left;
+    word-wrap: break-word;
+    white-space: normal;
+    max-width: 100%;
+}
+
+.cmd-container a {
+    color: #C0C0C0;
+    
+}
+
+.cmd-container a:hover {
+    color: #929292;
 }

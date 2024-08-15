@@ -1,8 +1,34 @@
 import React, { useState} from 'react';
 import './Icons.css';
 import "xp.css/dist/XP.css";
+import Draggable from 'react-draggable';
 
 const Icons = () => {
+
+    const [isAboutMeWindowVisible, setAboutMeWindowVisible] = useState(false);
+    const [isCmdWindowVisible, setCmdWindowVisible] = useState(false);
+    const [restore, setRestore] = useState(false); 
+
+    const handleAboutMeClick = () => {
+        setAboutMeWindowVisible(true);
+    };
+
+    const handleCmdClick = () => {
+        setCmdWindowVisible(true);
+    };
+
+    const handleClose = (windowName) => {
+        if (windowName === 'aboutMe') {
+            setAboutMeWindowVisible(false);
+        } else if (windowName === 'cmd') {
+            setCmdWindowVisible(false);
+        }
+    };
+
+    const handleMaximizeClick = () => {
+        setRestore(!restore);
+    }
+
     return (
         <>
             <div className='folder-icon'>
@@ -32,7 +58,7 @@ const Icons = () => {
                 </div>
             </div>
             <div className='notepad-icon'>
-                <button style={ {background: 'transparent', border:'none'}}>
+                <button style={ {background: 'transparent', border:'none'}} onClick={handleAboutMeClick}>
                     <img src="public/pictures/notepad-icon.png" alt="" />
                 </button>
                 <div className='icon-name'>
@@ -59,6 +85,14 @@ const Icons = () => {
                     <p>GitHub</p>
                 </div>
             </div>
+            <div className='cmd-icon'>
+                <button style={ {background: 'transparent', border:'none'}} onClick={handleCmdClick}>
+                    <img src="public/pictures/cmd-icon.png" alt="" />
+                </button>
+                <div className='icon-name'>
+                    <p>My Work</p>
+                </div>
+            </div>
             <div className='recycle_bin-icon'>
                 <button style={ {background: 'transparent', border:'none'}}>
                     <img src="public/pictures/recycle_bin-icon.png" alt="" />
@@ -67,23 +101,52 @@ const Icons = () => {
                     <p>Recycle Bin</p>
                 </div>
 
-            <div className='about_me-container'>
-                <div class="window" style={{width: "500px"}}>
-                    <div class="title-bar">
-                        <div class="title-bar-text">About Me</div>
-                            <div class="title-bar-controls">
-                                <button aria-label="Minimize"></button>
-                                <button aria-label="Maximize"></button>
-                                <button aria-label="Close"></button>
+            {isAboutMeWindowVisible && (
+                <Draggable bounds='body'>
+                    <div className='about_me-container'>
+                        <div className="window" style={{width: "100%"}}>
+                            <div className="title-bar">
+                                <div className="title-bar-text">About Me</div>
+                                <div className="title-bar-controls">
+                                    <button aria-label="Minimize"></button>
+                                        <button aria-label={restore ? "Restore" : "Maximize"} onClick={handleMaximizeClick}>
+                                    </button>
+                                    <button aria-label="Close" onClick={() => handleClose("aboutMe")}></button>
+                                </div>
                             </div>
+                            <div className="window-body">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat reiciendis at explicabo in quidem tempora aliquam iste tenetur perferendis voluptatibus iusto veniam fugit sunt, saepe obcaecati excepturi? Eum, porro maxime?</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="window-body">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat reiciendis at explicabo in quidem tempora aliquam iste tenetur perferendis voluptatibus iusto veniam fugit sunt, saepe obcaecati excepturi? Eum, porro maxime?</p>
+                </Draggable>
+            )}
+
+            {isCmdWindowVisible && (
+                <Draggable bounds='body'>
+                    <div className='cmd-container'>
+                        <div class="window" style={{width: "100%"}}>
+                            <div class="title-bar">
+                                <div class="title-bar-text">My Work</div>
+                                <div class="title-bar-controls">
+                                    <button aria-label="Minimize"></button>
+                                        <button aria-label={restore ? "Restore" : "Maximize"} onClick={handleMaximizeClick}>
+                                    </button>
+                                    <button aria-label="Close" onClick={() => handleClose("cmd")}></button>
+                                </div>
+                            </div>
+                            <div class="window-body">
+                                <pre>
+                                    <li><a href="https://supplement-store-seven.vercel.app/" target='_blank'>Supplement Store</a>: React/JS, Express.JS, PostgreSQL, HTML/CSS</li>
+                                    <li><a href="https://helpdesk-ticketing.vercel.app/" target='_blank'>Help-Desk Ticketing</a>: React/JS, HTML/CSS</li>
+                                    <li><a href="https://github.com/zachdev1/Blackjack" target='_blank'>Blackjack</a>: C (console)</li>
+                                    <li><a href="https://github.com/zachdev1/tdee-calculator" target='_blank'>TDEE Calculator</a>: Java (GUI)</li>
+                                </pre>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-                
-                
+                </Draggable>
+            )}
             </div>
         </>
     );
