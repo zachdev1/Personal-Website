@@ -33,7 +33,7 @@ const Icons = () => {
         <>
             <div className='folder-icon'>
                 <button style={ {background: 'transparent', border:'none'}}>
-                    <img src="public/pictures/folder-icon.png" alt="" />
+                    <img src="pictures/folder-icon.png" alt="" />
                 </button>
                 <div className='icon-name'>
                     <p>My Work</p>
@@ -41,7 +41,7 @@ const Icons = () => {
             </div>
             <div className='my_computer-icon'>
                 <button style={ {background: 'transparent', border:'none'}}>
-                    <img src="public/pictures/my_computer-icon.png" alt="" />
+                    <img src="pictures/my_computer-icon.png" alt="" />
                 </button>
                 <div className='icon-name'>
                     <p>My Computer</p>
@@ -50,7 +50,7 @@ const Icons = () => {
             <div className='adobe-pdf'>
                 <button style={ {background: 'transparent', border:'none'}}>
                     <a href="src/assets/Resume.pdf" target='_blank'>
-                        <img src="public/pictures/adobe-pdf.png" alt="" />
+                        <img src="pictures/adobe-pdf.png" alt="" />
                     </a>
                 </button>
                 <div className='icon-name'>
@@ -59,7 +59,7 @@ const Icons = () => {
             </div>
             <div className='notepad-icon'>
                 <button style={ {background: 'transparent', border:'none'}} onClick={handleAboutMeClick}>
-                    <img src="public/pictures/notepad-icon.png" alt="" />
+                    <img src="pictures/notepad-icon.png" alt="" />
                 </button>
                 <div className='icon-name'>
                     <p>About Me</p>
@@ -68,7 +68,7 @@ const Icons = () => {
             <div className='linkedin-logo'>
                 <button style={ {background: 'transparent', border:'none'}}>
                     <a href="https://www.linkedin.com/in/zachary-mohamed-065422217/" target='_blank'>
-                        <img src="public/pictures/linkedin-logo.png" alt="" />
+                        <img src="pictures/linkedin-logo.png" alt="" />
                     </a>
                 </button>
                 <div className='icon-name'>
@@ -78,7 +78,7 @@ const Icons = () => {
             <div className='github-logo'>
                 <button style={ {background: 'transparent', border:'none'}}>
                     <a href="https://github.com/zachdev1" target='_blank'>
-                        <img src="public/pictures/github-logo.png" alt="" />
+                        <img src="pictures/github-logo.png" alt="" />
                     </a>
                 </button>
                 <div className='icon-name'>
@@ -87,7 +87,7 @@ const Icons = () => {
             </div>
             <div className='cmd-icon'>
                 <button style={ {background: 'transparent', border:'none'}} onClick={handleCmdClick}>
-                    <img src="public/pictures/cmd-icon.png" alt="" />
+                    <img src="pictures/cmd-icon.png" alt="" />
                 </button>
                 <div className='icon-name'>
                     <p>My Work</p>
@@ -95,7 +95,7 @@ const Icons = () => {
             </div>
             <div className='recycle_bin-icon'>
                 <button style={ {background: 'transparent', border:'none'}}>
-                    <img src="public/pictures/recycle_bin-icon.png" alt="" />
+                    <img src="pictures/recycle_bin-icon.png" alt="" />
                 </button>
                 <div className='icon-name'>
                     <p>Recycle Bin</p>
