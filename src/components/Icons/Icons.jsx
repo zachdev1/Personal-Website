@@ -104,7 +104,7 @@ const Icons = () => {
             {isAboutMeWindowVisible && (
                 <Draggable bounds='body'>
                     <div className='about_me-container'>
-                        <div className="window" style={{width: "100%"}}>
+                        <div className="window" style={{width: "70%"}}>
                             <div className="title-bar">
                                 <div className="title-bar-text">About Me</div>
                                 <div className="title-bar-controls">
@@ -115,7 +115,7 @@ const Icons = () => {
                                 </div>
                             </div>
                             <div className="window-body">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat reiciendis at explicabo in quidem tempora aliquam iste tenetur perferendis voluptatibus iusto veniam fugit sunt, saepe obcaecati excepturi? Eum, porro maxime?</p>
+                                <p>Hi, I’m Zach, I’m pursuing my BS in Computer Science from the University of Central Florida. I have a passion for all types of technology, but specialize in software development and problem-solving. My goal is to continue learning and apply my knowledge to create impactful software to solve real-world problems.</p>
                             </div>
                         </div>
                     </div>
@@ -138,6 +138,7 @@ const Icons = () => {
                             <div class="window-body">
                                 <pre>
                                     <li><a href="https://supplement-store-seven.vercel.app/" target='_blank'>Supplement Store</a>: React/JS, Express.JS, PostgreSQL, HTML/CSS</li>
+                                    <li><a href="https://nba-search.vercel.app/" target='_blank'>NBA Search</a>: React/JS, Python, Flask, HTML/CSS</li>
                                     <li><a href="https://helpdesk-ticketing.vercel.app/" target='_blank'>Help-Desk Ticketing</a>: React/JS, HTML/CSS</li>
                                     <li><a href="https://github.com/zachdev1/Blackjack" target='_blank'>Blackjack</a>: C (console)</li>
                                     <li><a href="https://github.com/zachdev1/tdee-calculator" target='_blank'>TDEE Calculator</a>: Java (GUI)</li>

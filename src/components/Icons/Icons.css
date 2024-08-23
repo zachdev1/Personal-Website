@@ -127,10 +127,6 @@ button:hover {
     height: 54px;
 }
 
-/* .icon-name {
-    
-} */
-
 .icon-name p{
     color: white;
     font-size: 13px;
@@ -150,6 +146,7 @@ button:hover {
 
 .about_me-container p {
     font-size: 13px;
+    line-height: 1.5;
 }
 
 .cmd-container {
@@ -173,6 +170,10 @@ button:hover {
 .cmd-container a {
     color: #C0C0C0;
     
+}
+
+.cmd-container li {
+    margin: 5px;
 }
 
 .cmd-container a:hover {
