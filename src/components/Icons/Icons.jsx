@@ -49,7 +49,7 @@ const Icons = () => {
             </div>
             <div className='adobe-pdf'>
                 <button style={ {background: 'transparent', border:'none'}}>
-                    <a href="src/assets/Resume.pdf" target='_blank'>
+                    <a href="assets/Resume.pdf" target='_blank'>
                         <img src="pictures/adobe-pdf.png" alt="" />
                     </a>
                 </button>
