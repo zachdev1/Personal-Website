@@ -138,7 +138,9 @@ const Icons = () => {
                             <div class="window-body">
                                 <pre>
                                     <li><a href="https://supplement-store-seven.vercel.app/" target='_blank'>Supplement Store</a>: React/JS, Express.JS, PostgreSQL, HTML/CSS</li>
+                                    <li><a href="http://team26cm.seb.christmas/Team26/" target='_blank'>Contact Manager</a>: Linux, Apache, MySQL, PHP</li>
                                     <li><a href="https://nba-search.vercel.app/" target='_blank'>NBA Search</a>: React/JS, Python, Flask, HTML/CSS</li>
+                                    <li><a href="https://nba-search.vercel.app/" target='_blank'>Financial Manager</a>: React/JS, HTML/CSS</li>
                                     <li><a href="https://helpdesk-ticketing.vercel.app/" target='_blank'>Help-Desk Ticketing</a>: React/JS, HTML/CSS</li>
                                     <li><a href="https://github.com/zachdev1/Blackjack" target='_blank'>Blackjack</a>: C (console)</li>
                                     <li><a href="https://github.com/zachdev1/tdee-calculator" target='_blank'>TDEE Calculator</a>: Java (GUI)</li>
